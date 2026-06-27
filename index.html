@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TE INVITO A MI PRIMERA COMUNIÓN</title>
+    <!-- Fuentes elegantes de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Iconos de FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            /* Rosa suave inspirado en la imagen image_520282.png */
+            background-color: #f7d5e3; 
+            /* Si tienes la imagen guardada, reemplaza 'image_520282.png' aquí abajo */
+            background-image: linear-gradient(to bottom, rgba(255,255,255,0.4), rgba(247, 213, 227, 0.6)), url('image_520282.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #4a343e;
+            padding: 20px;
+        }
+
+        .card-container {
+            width: 100%;
+            max-width: 420px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* --- CONTENEDOR DEL VIDEO --- */
+        .video-wrapper {
+            width: 100%;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+            background-color: #000;
+            margin-bottom: 25px;
+            aspect-ratio: 9 / 16;
+            position: relative;
+        }
+
+        .video-wrapper video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* --- BOTONES CON BORDES RESALTADOS (ESTILO EXACTO) --- */
+        .buttons-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .maps-row {
+            width: 100%;
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        /* El secreto del diseño: esquinas cortadas y borde grueso */
+        .btn {
+            background: rgba(255, 255, 255, 0.95);
+            color: #4a343e;
+            font-family: 'Cinzel', serif;
+            font-weight: 700;
+            font-size: 0.72rem;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            position: relative;
+            
+            /* Bordes exteriores dorados más marcados */
+            border: 3px solid #d4af37; 
+            border-radius: 20px 4px 20px 4px; /* Simula el biselado elegante de la foto */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Efecto de doble marco interior que se nota en image_51f85c.jpg */
+        .btn::after {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            right: 2px;
+            bottom: 2px;
+            border: 1px solid #eecb6e;
+            border-radius: 17px 3px 17px 3px;
+            pointer-events: none;
+        }
+
+        .btn-half {
+            width: 145px;
+            height: 54px;
+            padding: 0 8px;
+        }
+
+        .btn-full {
+            width: 210px;
+            height: 54px;
+            margin-top: 5px;
+        }
+
+        .btn:active, .btn:hover {
+            transform: scale(0.97);
+            background: #ffffff;
+            border-color: #aa8413;
+        }
+
+        /* --- ICONOS --- */
+        .icon-gold {
+            font-size: 1rem;
+            color: #c9a0dc; /* Tono lila/rosa que combina con el fondo */
+            background: linear-gradient(135deg, #d4af37, #f3e5ab);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-right: 6px;
+        }
+
+        /* Círculo dorado de WhatsApp */
+        .icon-whatsapp-circle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 2px solid #d4af37;
+            background: transparent;
+            margin-right: 10px;
+        }
+
+        .icon-whatsapp-circle i {
+            color: #d4af37;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        
+        <!-- Contenedor del video con controles nativos del celular -->
+        <div class="video-wrapper">
+            <!-- Reemplaza 'tu-video.mp4' con tu archivo real -->
+            <video controls playsinline poster="miniatura.jpg">
+                <source src="mp/MI PRIMERA COMUNIÓN.mp4" type="video/mp4">
+                Tu navegador no soporta video.
+            </video>
+        </div>
+
+        <!-- Botones con bordes acentuados -->
+        <div class="buttons-container">
+            
+            <div class="maps-row">
+                <a href="https://maps.app.goo.gl/xxdvQLayGVb5YoYZ9" target="_blank" class="btn btn-half">
+                    <span class="icon-gold"><i class="fa-solid fa-location-dot"></i></span>
+                    <span>VER MAPA CEREMONIA</span>
+                </a>
+                <a href="https://maps.app.goo.gl/xRRXChPWVSo5PwGYA" target="_blank" class="btn btn-half">
+                    <span class="icon-gold"><i class="fa-solid fa-location-dot"></i></span>
+                    <span>VER MAPA RECEPCIÓN</span>
+                </a>
+            </div>
+
+            <a href="https://wa.me/521234567890?text=¡Hola!%20Confirmo%20mi%20asistencia." target="_blank" class="btn btn-full">
+                <div class="icon-whatsapp-circle">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <span>CONFIRMA ASISTENCIA</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
